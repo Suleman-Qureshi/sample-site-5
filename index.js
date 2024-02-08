@@ -32,19 +32,19 @@ window.addEventListener(`scroll`, () => {
     }
   })
 });
-let section =document.querySelectorAll(`section`);
-let navlinks=document.querySelectorAll(`nav ul a`);
- window.onscroll=()=>{
-    section.forEach(sec=>{
-          let top=window.scrollY;
-          let offset=sec.offsetTop -40;
-          let height=sec.offsetHeight;
-          let id=sec.getAttribute(`id`);
-          if(top>=offset && top<offset+height){
-            navlinks.forEach(link=>{
-                link.classList.remove(`active`);
-                document.querySelector('nav ul a[href*=' + id + ']').classList.add(`active`)
-            })
-          }
-    })
- }
+// let section =document.querySelectorAll(`section`);
+// let navlinks=document.querySelectorAll(`nav ul a`);
+//  window.onscroll=()=>{
+//     section.forEach(sec=>{
+//           let top=window.scrollY;
+//           let offset=sec.offsetTop -40;
+//           let height=sec.offsetHeight;
+//           let id=sec.getAttribute(`id`);
+//           if(top>=offset && top<offset+height){
+//             navlinks.forEach(link=>{
+//                 link.classList.remove(`active`);
+//                 document.querySelector('nav ul a[href*=' + id + ']').classList.add(`active`)
+//             })
+//           }
+//     })
+//  }
